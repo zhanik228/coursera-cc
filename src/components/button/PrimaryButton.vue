@@ -1,5 +1,5 @@
 <template>
-    <button :class="`bg-${color ? colors[color] : colors['purple']} py-[16px] px-[28px] rounded-full text-[#fff] hover:text-${color ? colors[color] : colors['purple']} transition-opacity`">
+    <button :class="`${color ? colors[color] : colors['purple']} py-[16px] px-[28px] rounded-full text-[#fff] hover:text-${color ? colors[color] : colors['purple']} transition-opacity`">
         <slot></slot>
         {{  }}
     </button>
@@ -16,9 +16,9 @@ export default {
     data() {
         return {
             colors: {
-                orange: 'primary-orange',
-                purple: 'primary-purple-400'
-            }
+                orange: 'bg-primary-orange',
+                purple: 'bg-primary-purple-400'
+            },
         }
     }
 }

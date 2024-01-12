@@ -1,8 +1,7 @@
 
 <template>
   <primary-header />
-  <primary-intro />
-  <popular-courses />
+  <router-view />
 </template>
 
 <script>
